@@ -1,0 +1,1030 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    height: 1205px;
+    display: grid;
+    width: 100%;
+    background: #FFD873;
+}
+.header_container {
+    width: 1410px;
+    margin: 0 auto
+}
+.logo {
+    width: 10.5%;
+    position: absolute;
+    left: 10.5%;
+    top: 5.5%;
+}
+.content_container {
+    width: 1410px;
+    margin: 0 auto
+}
+nav {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 50%;
+}
+.dop {
+    display: grid;
+    justify-content: end;
+}
+.nav-btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+.nav-btn:hover {
+    font-size: 21px;
+    font-weight: 600;
+}
+.favourites {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.preview{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 120px;
+    margin-top: 341px;
+}
+.preview_inf {
+    display: grid; 
+    grid-row-gap: 40px;
+    padding: 0px;
+    grid-template-rows: auto auto auto;
+}
+.preview h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+}
+.preview p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    grid-column: 2/1;
+}
+.see_recipes {
+    display: grid;
+    width: 264px;
+    height: 68px;
+    background: #000000;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    align-items: center;
+    order: 2;
+    grid-column: 1/1;
+}
+.see_recipes button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;    
+    color: #FFFFFF;
+    text-align: center;   
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.preview_recipe { 
+    width: 690px;
+    height: 465px;
+}
+.filtering {
+    display: grid;
+    grid-template-columns: repeat(4, 179px);
+    grid-column-gap: 80px;
+    justify-content: center;
+    margin-top: 73px;  
+}
+.btn_select {
+    box-sizing: border-box;
+    width: 179px;
+    height: 55px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    flex: none;
+    order: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select_span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    background: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+.reset_span {
+    color: red;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    background: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+.recipes {
+    margin-left: 121px;
+    margin-top: 105px;
+    display: grid;
+    grid-template-columns: repeat(2, 545px);
+    grid-template-rows: repeat(4, 215px) ;
+    grid-row-gap: 105px;
+    grid-column-gap: 50px;
+}
+.recipe_preview {
+    width: 210px;
+    height: 210px;
+}
+.king_salad {
+    display: grid;
+    grid-template-columns: 210px 295px;
+    grid-row-gap: 20px;
+}
+
+.salad_info {
+    display: grid;
+    padding-left: 30px;
+    grid-template-rows: 22px;
+    grid-row-gap: 20px;
+}
+.name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+
+}
+.recipe {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+.salad_star {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    cursor: pointer;
+}
+#more {
+    display: none;
+}
+#more_btn {
+    background: none;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: grid;
+    justify-content: left;
+}
+#more_btn:focus {
+    padding-top: 15px;
+}
+.change_star:hover {
+    background: url('https://drive.google.com/file/d/18vl22i47bfo-JTJcdFQfRIg-mEhr_Q4R/view?usp=sharing');
+}
+.Snacks {
+    display: grid;
+    grid-template-columns: 210px 264px;
+    grid-column-gap: 30px;
+}
+.preview_snacks{
+    display: grid;
+    grid-column: 1/1;
+}
+.snacks_info {
+    display: grid;
+    grid-template-rows: 23px 116px;
+    grid-row-gap: 30px;
+}
+.snacks_star {
+    display: grid;
+}
+.pie {
+    display: grid;
+    grid-template-columns: 210px 264px;
+    grid-column-gap: 30px;
+}
+.pie_info {
+    display: grid;
+    grid-template-rows: 38px 160px;
+    grid-row-gap: 105x;
+}
+.Cheesecake {
+    display: grid;
+    grid-template-columns: 210px 285px;
+    grid-column-gap: 30px;
+}
+.Cheesecake_info {
+    display: grid;
+    grid-template-rows: 48px;
+}
+.Cheesecakes_with_syrup {
+    display: grid;
+    grid-template-columns: 210px 310px;
+    grid-column-gap: 30px;
+}
+.Cheesecakes {
+    display: grid;
+    grid-template-columns: 210px 264px;
+    grid-column-gap: 30px;
+}
+.Cheesecakes_info {
+    display: grid;
+    grid-template-rows: 26px;
+    grid-row-gap: 26px;
+}
+.berry_cake {
+    display: grid;
+    grid-template-columns: 210px 264px;
+    grid-column-gap: 30px;
+}
+.berry_cake_info {
+    display: grid;
+    grid-template-rows: 28px;
+    grid-row-gap: 19px;
+}
+.steak {
+    display: grid;
+    grid-template-columns: 210px 259px;
+    grid-column-gap: 30px;
+}
+.steak_info {
+    display: grid;
+    grid-template-rows: 29px;
+    grid-row-gap: 18px;
+}
+.chicken {
+    display: grid;
+    grid-template-columns: 210px 220px;
+    grid-column-gap: 30px;
+}
+.chicken_info {
+    display: grid;
+    grid-template-rows: 29px;
+    grid-row-gap: 20px;
+}
+footer {
+    margin-top: 105px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+.foo_text {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 120px;
+}
+.foo_info {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-rows: 29px 19px 17px 17px;
+}
+.footer_heading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.footer_s {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+}
+.foo_about {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-rows: 29px 20px 17px 17px;
+}
+.foo_company {
+    display: grid;
+    grid-row-gap: 10px;
+}
+.foo_icons {
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    grid-column-gap: 30px;
+}
+.foo_icon {
+    height: 40px;
+}
+.copyright {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.7);   
+}
+@media  screen and (max-width: 1450px) {
+    .header_container {
+        width: 1180px;
+    }
+    header {
+        height: 1080px;
+    }
+    .preview {
+        margin-top: 280px;
+    }
+    .preview_inf {
+        grid-row-gap: 0px;
+    }
+    .preview_inf h1 {
+        font-size: 44px;
+    }
+    .preview_recipe {
+        width: 615px;
+        height: 420px;
+    }
+    .content_container{
+        width: 1180px;
+    }
+    .recipes {
+        margin-left: 75px;
+        grid-column-gap: 30px;
+        grid-template-columns: 505px 520px;
+    }
+    .name {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header_container {
+        width: 960px;
+    }
+    header {
+        height: 785px;
+    }
+    .logo {
+        width: 12.5%;
+    }
+    nav {
+        margin-left: 30%;
+    }
+    .nav-btn:hover {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .preview {
+        margin-top: 178px;
+    }
+    .preview_inf h1 {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .preview_inf p {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .preview_inf {
+        grid-row-gap: 20px;
+        grid-template-rows: 86px 87px 68px;
+    }
+    .preview_recipe {
+        width: 420px;
+        height: 290px;
+    }
+    .content_container {
+        width: 960px;
+    }
+    .filtering {
+        grid-column-gap: 45px;
+    }
+    .btn_select {
+        width: 150px;
+        height: 55px;
+    }
+    .recipe_preview {
+        width: 160px;
+        height: 160px;
+    }
+    .preview {
+        margin-left: 0px;
+    }
+    .recipes {
+        margin-left: 0px;
+        grid-column-gap: 20px;
+        grid-template-columns: repeat(2, 455px);
+        grid-template-rows: repeat(4, 192px);
+        grid-row-gap: 85px;
+        margin-top: 90px;
+    }
+    #more_btn:focus {
+        padding-top: 10px;
+    }
+    .info_gap {
+        grid-row-gap: 20px;
+        grid-template-rows: 26px;
+    }
+    .name {
+        font-size: 19px;
+    }
+    .recipe {
+        font-size: 15px;
+    }
+    .king_salad {
+        grid-template-columns: 160px 295px;
+    }
+    .Snacks {
+        grid-template-columns: 160px 245px;
+    }
+    .pie  {
+        grid-template-columns: 160px 264px;
+    }
+    .pie_info {
+        grid-template-rows: 26px ;
+    }
+    .Cheesecake {
+        grid-template-columns: 160px 285px;
+    }
+    .Cheesecake_info {
+        grid-template-rows: 19px 140px 16px;
+        grid-row-gap: 0px;
+    }
+    .pad {
+        padding-top: 20px;
+    }
+    #more_btn {
+        padding-top: 15px;
+    }
+    .Cheesecake_info::after:focus {
+        grid-template-rows: 19px 140px 16px;
+    }
+    .Cheesecakes {
+        grid-template-columns: 160px 263px;
+    }
+    .berry_cake {
+        grid-template-columns: 160px 264px;
+    }
+    .steak {
+        grid-template-columns: 160px 259px;
+    }
+    .chicken {
+        grid-template-columns: 160px 220px;
+    }
+    footer {
+        grid-template-columns: none;
+        margin-top: 100px;
+    }
+    .foo_text {
+        grid-column-gap: 85px;
+    }
+    .foo_info {
+        grid-row-gap: 5px;
+    }
+    .foo_about {
+        grid-template-rows: 29px 38px 17px 17px;
+        grid-row-gap: 5px;
+        width: 117px;
+    }
+    .foo_company {
+        grid-row-gap: 5px;
+    }
+    .foo_icons {
+        grid-template-columns: repeat(5, 35px);
+        grid-column-gap: 20px;
+        padding-bottom: 10px;
+    }
+    .icon {
+        width: 35px;   
+    }
+}
+@media screen and (max-width: 992px) {
+    .header_container {
+        width: 720px;
+    }
+    header {
+        height: 640px;
+    }
+    .logo {
+        top: 7.5%;
+    }
+    nav {
+        grid-template-columns: 91px 115px 113px 98px;
+    }
+    .nav-btn {
+        font-size: 17px;
+    }
+    .nav-btn:hover {
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .nav-btn:hover {
+        font-size: 17px;
+    }
+    .preview {
+        margin-top: 176px;
+        grid-template-columns: auto auto;
+    }
+    .preview_inf {
+        grid-template-rows: 78px 82px 68px;
+    }
+    .preview_inf h1 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .preview_inf p {
+        font-size: 18px;
+    }
+    .see_recipes {
+        width: 220px;
+        height: 55px;
+    }
+    #scroll {
+        font-size: 16px;
+    }
+    .preview_recipe {
+        width: 360px;
+        height: 255px;
+    }
+    .content_container {
+        width: 720px;
+    }
+    .recipe_preview {
+        width: 105px;
+        height: 105px;
+    }
+    .recipes {
+        grid-row-gap: 70px;
+        grid-template-columns: repeat(2, 348px);
+        grid-template-rows: repeat(4, 180px);
+    }
+    .name {
+        font-size: 18px;
+    }
+    .recipe {
+        font-size: 13px;
+    }
+    #more_btn {
+        padding-top: 15px;
+    }
+    .king_salad {
+        grid-template-columns: 105px 203px;
+        grid-column-gap: 15px;
+    }
+    .salad_info {
+        padding-left: 0px;
+        grid-row-gap: 10px;
+    }
+    .Snacks {
+        grid-template-columns: 105px 218px;
+        grid-column-gap: 15px;
+    }
+    .snacks_info{
+        grid-row-gap: 10px;
+    }
+    .pie  {
+        grid-template-columns: 105px 223px;
+        grid-column-gap: 15px;
+    }
+    .pie_info {
+        grid-row-gap: 10px;
+        grid-template-rows: 26px 160px;
+    }
+    .Cheesecake {
+        grid-template-columns: 105px 229px;
+        grid-column-gap: 15px;
+    }
+    .Cheesecake_info {
+        grid-template-rows: 26px 140px 16px;
+        grid-row-gap: 0px;
+    }
+    .pad {
+        padding-top: 0px;
+    }
+    .Cheesecakes {
+        grid-template-columns: 105px 199px;
+        grid-column-gap: 15px;
+    }
+    .Cheesecakes_info {
+        grid-row-gap: 10px;
+    }
+    .berry_cake {
+        grid-template-columns: 105px 210px;
+        grid-column-gap: 15px;
+    }
+    .berry_cake_info {
+        grid-row-gap: 10px;
+        grid-template-rows: 26px;
+    }
+    .steak {
+        grid-template-columns: 105px 213px;
+        grid-column-gap: 15px;
+    }
+    .steak_info {
+        grid-row-gap: 10px;
+    }
+    .chicken {
+        grid-template-columns: 105px 220px;
+        grid-column-gap: 15px;
+    }
+    .chicken_info {
+        grid-row-gap: 10px;
+        grid-template-rows: 26px;
+    }
+    .filtering {
+        grid-template-columns: repeat(4, 130px);
+        grid-column-gap: 35px;
+    }
+    .btn_select {
+        width: 130px;
+        height: 45px;
+    }
+    .reset_span {
+        font-size: 18px;
+    }
+    .select_span {
+        font-size: 18px;
+    }
+    .footer_heading {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header_container {
+        width: 540px;
+    }
+    header {
+        height: 490px;
+    }
+    .logo {
+        top: 6.5%;
+        width: 11.5%;
+    }
+    nav {
+        grid-template-columns: 63px 93px 92px 68px;
+        grid-column-gap: 30px;
+        margin-top: 75px;
+    }
+    .nav-btn {
+        font-size: 14px;
+    }
+    .nav-btn:hover {
+        font-size: 16px;
+    }
+    .preview{
+        margin-top: 85px
+    }
+    .preview_inf {
+        grid-template-rows: 72px 82px 68px;
+        grid-row-gap: 18px;
+    }
+    .preview_inf h1 {
+        font-size: 22px;
+    }
+    .preview_inf p {
+        font-size: 13px;
+    }
+    .preview_recipe {
+        width: 280px;
+        height: 195px;
+    }
+    .see_recipes {
+        width: 195px;
+        height: 45px;
+    }
+    #scroll {
+        font-size: 14px;
+    }
+    .content_container {
+        width: 540px;
+    }
+    .filtering {
+        grid-template-columns: repeat(4, 100px);
+        margin-top: 50px;
+    }
+    .btn_select {
+        width: 100px;
+        height: 40px;
+    }
+    .reset_span {
+        font-size: 15px;
+    }
+    .select_span {
+        font-size: 16px;
+    }
+    .recipes {
+        grid-template-columns: none;
+        grid-template-rows: repeat(8, 122px);
+        justify-content: center;
+        margin-top: 75px;
+    }
+    .recipe_preview {
+        width: 120px;
+        height: 120px;
+    }
+    .king_salad {
+        grid-template-columns: 120px 396px;
+        grid-column-gap: 15px;
+    }
+    .salad_info {
+        padding-left: 0px;
+        grid-row-gap: 10px;
+    }
+    .Snacks {
+        grid-template-columns: 120px 285px;
+        grid-column-gap: 15px;
+    }
+    .snacks_info{
+        grid-row-gap: 10px;
+    }
+    .pie  {
+        grid-template-columns: 120px 390px;
+        grid-column-gap: 15px;
+    }
+    .pie_info {
+        grid-row-gap: 10px;
+        grid-template-rows: 26px 77px;
+    }
+    .Cheesecake {
+        grid-template-columns: 120px 386px;
+        grid-column-gap: 15px;
+    }
+    .Cheesecake_info {
+        grid-template-rows: 26px 78px 16px;
+        grid-row-gap: 0px;
+    }
+    .pad {
+        padding-top: 0px;
+    }
+    .Cheesecakes {
+        grid-template-columns: 120px 269px;
+        grid-column-gap: 15px;
+    }
+    .Cheesecakes_info {
+        grid-row-gap: 10px;
+    }
+    .berry_cake {
+        grid-template-columns: 120px 374px;
+        grid-column-gap: 15px;
+    }
+    .berry_cake_info {
+        grid-row-gap: 10px;
+        grid-template-rows: 26px;
+    }
+    .steak {
+        grid-template-columns: 120px 213px;
+        grid-column-gap: 15px;
+    }
+    .steak_info {
+        grid-row-gap: 10px;
+    }
+    .chicken {
+        grid-template-columns: 120px 308px;
+        grid-column-gap: 15px;
+    }
+    .chicken_info {
+        grid-row-gap: 10px;
+        grid-template-rows: 26px;
+    }
+    #more_btn {
+        display: none;
+    }
+    #dots {
+        display: none;
+    }
+    #more {
+        display: block;
+    }
+    .foo_text {
+        grid-column-gap: 60px;
+    }
+    .footer_heading {
+        font-size: 16px;
+    }
+    .footer_s {
+        font-size: 13px;
+    }
+    .foo_info {
+        grid-row-gap: 8px;
+    }
+    .foo_about {
+        grid-row-gap: 8px;
+        grid-template-rows: 22px 33px 15px 17px
+    }
+    .foo_company {
+        grid-row-gap: 8px;
+    }
+    .icon {
+        width: 33px;
+    }
+    .copyright {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .header_container{
+        width: 320px;
+    }
+    header {
+        height: 415px;
+    }
+    .logo {
+        top: 3.5%;
+        left: 3%;
+        width: 16.5%;
+    }
+    nav {
+        grid-template-columns: 46px 67px 66px 48px;
+        margin-top: 40px;
+        grid-column-gap: 18px;
+        margin-left: 20%;
+    }
+    .nav-btn {
+        font-size: 10px;
+    }
+    .nav-btn:hover {
+        font-size: 11px;
+    }
+    .preview{
+        grid-template-columns: none;
+        margin-top: 50px;
+    }
+    .preview_inf {
+        grid-template-rows: 30px 82px 40px;
+    }
+    .preview_recipe {
+        display: none;
+    }
+    .see_recipes {
+        width: 148px;
+        height: 39px;
+    }
+    #scroll {
+        font-size: 11px;
+    }
+    .content_container {
+        width: 320px;
+    }
+    .filtering {
+        grid-template-columns: repeat(2, 90px);
+        grid-row-gap: 20px;
+        margin-top: 40px;
+    }
+    .btn_select {
+        width: 100px;
+        height: 35px;
+    }
+    .reset_span {
+        font-size: 14px;
+    }
+    .select_span {
+        font-size: 15px;
+    }
+    .recipes {
+        margin-top: 50px;
+        grid-row-gap: 50px;
+        grid-template-rows: none;
+    }
+    .name {
+        text-align: center;
+    }
+    .recipe_preview {
+        width: 100px;
+        height: 100px;
+        padding-left: 110px;
+    }
+    .king_salad {
+        grid-template-columns: none;
+        grid-template-rows: 100px;
+        grid-row-gap: 15px;
+    }
+    .salad_info {
+        padding-left: 0px;
+        grid-row-gap: 10px;
+    }
+    .Snacks {
+        grid-template-columns: none;
+        grid-template-rows: 100px;
+        grid-row-gap: 15px;
+    }
+    .snacks_info{
+        grid-row-gap: 10px;
+    }
+    .pie  {
+        grid-template-columns: none;
+        grid-template-rows: 100px 133px;
+        grid-row-gap: 15px;
+    }
+    .pie_info {
+        grid-row-gap: 10px;
+        grid-template-rows: 26px 97px;
+    }
+    .Cheesecake {
+        grid-template-columns: none;
+        grid-template-rows: 100px 185px;
+        grid-row-gap: 15px;
+    }
+    .Cheesecake_info {
+        grid-template-rows: 26px 78px 16px;
+        grid-row-gap: 0px;
+    }
+    .pad {
+        padding-top: 0px;
+    }
+    .Cheesecakes {
+        grid-template-columns: none;
+        grid-template-rows: 100px;
+        grid-row-gap: 15px;
+    }
+    .Cheesecakes_info {
+        grid-row-gap: 10px;
+    }
+    .berry_cake {
+        grid-template-columns: none;
+        grid-template-rows: 100px;
+        grid-row-gap: 15px;
+    }
+    .berry_cake_info {
+        grid-row-gap: 10px;
+        grid-template-rows: 26px;
+    }
+    .steak {
+        grid-template-columns: none;
+        grid-template-rows: 100px;
+        grid-row-gap: 15px;
+    }
+    .steak_info {
+        grid-row-gap: 10px;
+    }
+    .chicken {
+        grid-template-columns: none;
+        grid-template-rows: 100px;
+        grid-row-gap: 15px;
+    }
+    .chicken_info {
+        grid-row-gap: 10px;
+        grid-template-rows: 26px;
+    }
+    .foo_text {
+        grid-column-gap: 35px;
+    }
+    .footer_heading {
+        font-size: 16px;
+    }
+    .footer_s {
+        font-size: 12px;
+    }
+    .foo_icons {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .foo_text {
+        grid-template-columns: 174px 100px;
+        grid-row-gap: 30px;
+    }
+}

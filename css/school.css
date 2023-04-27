@@ -1,0 +1,1608 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body.lock {
+    overflow: hidden;
+}
+header {
+    background: url('../img/headerbackground.png') no-repeat center top;
+    height: 996px;
+    width: 100%;
+    position: relative;
+}
+.container {
+    width: 1180px;
+    margin: 0 auto
+}
+nav {
+    display: grid;
+    margin-top: 87px;
+    background: url('../img/navBk.png');
+    width: 100%;
+    height: 148px;
+    align-content: center;
+    position: absolute;
+}
+.navigation_list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, auto);
+    grid-column-gap: 50px;
+}
+.nav_btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    border: none;
+    background: none;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+}
+.nav_btn:hover {
+    font-size: 21px;
+    font-weight: 600;
+}
+.call {
+    width: 145px;
+    height: 34px;
+    background: #FF3F3F;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+    border: none;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.call:hover {
+    animation: swaying 1.5s ease-in-out infinite;
+}
+.call_btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+#call-popup {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, .5);
+}
+.call-pop-up-content {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    position: relative;
+}
+.call-pop-up-body {
+    margin: auto;
+    width: 694px;
+    height: 531px;
+    background: #E77676;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+}
+.call-close-pop-up {
+    margin-left: 656px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.call-h-pop-up {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 9.5px;
+}
+.call-instruction {
+    width: 396px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-left: 145px;
+    margin-top: 84px;
+}
+.call-form {
+    margin-left: 145px;
+    margin-top: 69px;
+}
+.call-input {
+    width: 292px;
+    height: 63px;
+    background: #FFFFFF;
+    border: 0.5px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    padding-left: 20px;
+}
+.call-bottom-elem {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.submit {
+    width: 232px;
+    height: 55px;
+    border: none;
+    background: #FFE978;
+    box-shadow: 0px 4px 48px #FFE978;
+    margin-left: 40px;
+    margin-top: 38px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+.class_off {
+    overflow: hidden;
+}
+.boom-sticker {
+    margin-left: 109px;
+    margin-top: -45px;
+}
+.show {
+    display: block;
+    }
+    .hide {
+        display: none;
+    }
+    
+.submit p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+.sale {
+    width: 388px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 40px;
+    margin-top: 354px;
+    margin-left: 50px;
+    position: absolute;
+}
+h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+.stock_inf {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.choose-btn {
+    width: 240.98px;
+    height: 60.6px;
+    background: #FFF173;
+    box-shadow: 0px 4px 4px rgba(255, 241, 115, 0.25);
+    border-radius: 102px;
+    filter: drop-shadow(0px 4px 30px #FFF173);
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: none;   
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    cursor: pointer;
+}
+.lessons_section {
+    margin-top: 96.5px;
+}
+.h-lessons {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+    text-align: center; 
+}
+.choose-lessons {
+    margin-top: 127px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    grid-column-gap: 152px;
+}
+.online-lessons {
+    width: 348px;
+    height: 395px;
+    background: linear-gradient(217.9deg, #FFF173 0%, #EC8282 72.44%);
+    border-radius: 7px;
+}
+.h-online-lessons {
+    margin-top: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    margin-left: 108px;
+}
+.school-logo {
+    display: grid;
+    justify-self: end;
+    width: 63.38px;
+}
+.top-lessons {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.inf-online-lessons {
+    margin: 0 auto;
+    width: 258px;
+}
+.text-online-lessons {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+.sign-up-btn:hover {
+    animation: swaying 1.5s ease-in-out infinite;
+}
+.sign-up-btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    cursor: pointer;
+    width: 240.98px;
+    height: 60.6px;
+    background: #FFF173;
+    box-shadow: 0px 4px 4px rgba(255, 241, 115, 0.25);
+    border-radius: 102px;
+    filter: drop-shadow(0px 4px 30px #FFF173);
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.online-lessons-btn {
+    margin-top: 43px;
+}
+.offline-lessons {
+    width: 348px;
+    height: 395px;
+    background: linear-gradient(217.9deg, #FFF173 0%, #EC8282 72.44%);
+    border-radius: 7px;
+}
+.h-offline-lessons {
+    margin-top: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    margin-left: 108px;
+}
+.top-lessons {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.inf-offline-lessons {
+    margin: 0 auto;
+    width: 258px;
+}
+.text-offline-lessons {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 39px;
+}
+.price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.offline-lessons-btn {
+    margin-top: 62px;
+}
+#application_popup {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, .5);
+}
+.application-pop-up-content {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    position: relative;
+}
+.application-pop-up-body {
+    position: relative;
+    width: 868px;
+    height: 579px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: auto;
+}
+.application-close-pop-up {
+    margin-left: 815px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.application-sale-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 86px;
+    line-height: 101px;
+    text-transform: uppercase;
+    background: linear-gradient(108.4deg, #FFDD00 9.66%, #FD5D00 108.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    margin-left: 83.67px;
+    margin-top: 1px;
+    transform: rotate(4.79deg);
+}
+.application-sale-img {
+    margin-left: 78px;
+}
+.application-form {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 60px;
+    position: absolute;
+    left: 434px;
+    top: 99px;    
+}
+.application-input {
+    width: 316px;
+    height: 55px;
+    padding-left: 27px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+.application-button-elem {
+    display: grid;
+    justify-content: center;
+}
+.application-submit {
+    cursor: pointer;
+    width: 227px;
+    height: 65px;
+    background: #2F2F2F;
+    border-radius: 70px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.teachers {
+    margin-top: 250px;
+}
+.h-teachers {
+    display: grid;
+    justify-content: center;
+}
+.h-teachers h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px; 
+    color: #000000;
+}
+.slides {
+    display: grid;
+    justify-content: center;
+    margin-top: 74px;
+}
+.smaller-slides {
+    display: none;
+}
+.slides_group {
+    display: none;
+    grid-column-gap: 46px;
+    grid-template-columns: auto auto auto;
+    animation: slowSlide 0.8s ease-in-out;
+}
+.slides_group.active {
+    display: grid;
+}
+.slide img {
+    width: 294px;
+    height: 437px;
+    border-radius: 10px;
+}
+.slide-buttons {
+    margin-top: 42px;
+    text-align: center;
+}
+.slide-btn {
+    display: inline-block;
+    cursor: pointer;
+}
+.slide-btn img {
+    display: block;
+}
+.btn-next {
+    transform: rotate(180deg);
+    margin-left: 70px;
+}
+.teacher-name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.about_school {
+    margin-top: 183px;
+}
+.h-about_school{
+    display: grid;
+    justify-content: center;
+}
+.h-about_school h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;    
+}
+.inf_about_school {
+    margin-top: 124px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 74px;
+    justify-content: center;
+}
+.we_teach {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+.teach_list li {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+footer {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+.foo_text {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 120px;
+}
+.foo_info {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-rows: 29px 19px 17px 17px;
+}
+.footer_heading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.footer_s {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+}
+.foo_about {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-rows: 29px 20px 17px 17px;
+}
+.foo_company {
+    display: grid;
+    grid-row-gap: 10px;
+}
+.foo_icons {
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    grid-column-gap: 30px;
+}
+.foo_icon {
+    height: 40px;
+}
+.copyright {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.7);   
+}
+@keyframes swaying {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-10deg);
+    }
+    20%, 40% {
+        transform: rotate(10deg);
+    }
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+@keyframes slowSlide {
+    from {margin-left: -200px; opacity: 0;}
+    to {margin-left: 0px; opacity: 1;}
+}
+@keyframes slowSlide_993px {
+    from {margin-left: -100px; opacity: 0;}
+    to {margin-left: 0px; opacity: 1;}
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    header {
+        background: url('../img/smaller-background.png') no-repeat center top ;
+        height: 820px;
+    }
+    .navigation_list {
+        grid-column-gap: 32px;
+    }
+    .nav_btn {
+        font-size: 18px;
+    }
+    .nav_btn:hover {
+        font-size: 19px;
+    }
+    .call {
+        width: 138px;
+    }
+    .call_btn {
+        font-size: 16px;
+    }
+    .call-pop-up-body {
+        width: 625px;
+        height: 450px;
+    }
+    .call-close-pop-up {
+        margin-left: 592px;
+        margin-top: 12px;
+    }
+    .call-h-pop-up {
+        margin-top: 0px;
+    }
+    .call-instruction {
+        margin-top: 50px;
+        margin-left: 115px;
+    }
+    .call-form {
+        margin-left: 167px;
+        margin-top: 50px;
+    }
+    .call-input {
+        height: 60px;
+        width: 260px;
+    }
+    .boom-sticker {
+        margin-left: 98px;
+        margin-top: -3px;
+    }
+    .submit {
+        margin-left: 27px;
+    }
+    .sale {
+        grid-template-rows: 47px auto auto;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    .stock_inf {
+        font-size: 23px;
+    }
+    .choose-btn {
+        width: 228px;
+        height: 55px;
+    }
+    .h-lessons {
+        font-size: 34px;
+    }
+    .lessons_section {
+        margin-top: 79px;
+    }
+    .choose-lessons {
+        margin-top: 115px;
+        grid-column-gap: 100px;
+    }
+    .online-lessons {
+        width: 330px;
+        height: 390px;
+    }
+    .h-online-lessons {
+        margin-left: 95px;
+    }
+    .offline-lessons {
+        width: 330px;
+        height: 390px;
+    }
+    .h-offline-lessons {
+        margin-left: 95px;
+    }
+    .text-offline-lessons {
+        margin-bottom: 55px;
+    }
+    .offline-lessons-btn {
+        margin-top: 48px;
+    }
+    .application-pop-up-body {
+        width: 710px;
+        height: 460px;
+    }
+    .application-close-pop-up {
+        margin-left: 672px;
+        margin-top: 13px;
+    }
+    .application-sale-text {
+        font-size: 70px;
+    }
+    .application-sale-img {
+        width: 230px;
+    }
+    .application-form {
+        left: 357px;
+        top: 76px;
+        grid-row-gap: 45px;
+    }
+    .application-input {
+        width: 270px;
+        height: 47px;
+        font-size: 19px;
+    }
+    .h-teachers h1 {
+        font-size: 34px;
+    }
+    .teachers {
+        margin-top: 180px;
+    }
+    .slide img {
+        width: 260px;
+        height: 400px;
+    }
+    .about_school {
+        margin-top: 70px;
+    }
+    .h-about_school h1 {
+        font-size: 38px;
+    }
+    .inf_about_school {
+        grid-column-gap: 55px;
+        margin-top: 75px;
+        grid-template-columns: auto 361px;
+    }
+    .inf_about_school img {
+        width: 480px;
+    }
+    .we_teach {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .teach_list li {
+        font-size: 20px;
+    }
+    footer {
+        grid-template-columns: none;
+        margin-top: 100px;
+    }
+    .foo_text {
+        grid-column-gap: 85px;
+    }
+    .foo_info {
+        grid-row-gap: 10px;
+    }
+    .foo_about {
+        grid-template-rows: 29px 35px 16px 16px;
+        grid-row-gap: 8px;
+        width: 117px;
+    }
+    .foo_company {
+        grid-row-gap: 10px;
+    }
+    .foo_icons {
+        grid-template-columns: repeat(5, 35px);
+        grid-column-gap: 20px;
+        padding-bottom: 10px;
+    }
+    .icon {
+        width: 35px;   
+    }
+}
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    header {
+        background: url('../img/992px-backgound.png') no-repeat center top;
+        height: 600px;
+    }
+    nav {
+        margin-top: 60px;
+    }
+    .navigation_list {
+        grid-column-gap: 24px;
+    }
+    .nav_btn {
+        font-size: 15px;
+    }
+    .nav_btn:hover {
+        font-size: 15px;
+    }
+    .call {
+        width: 120px;
+        height: 32px;
+    }
+    .call img {
+        font-size: 16px;
+    }
+    .call_btn {
+        font-size: 14px;
+    }
+    .call-pop-up-body {
+        width: 513px;
+        height: 365px;
+    }
+    .call-close-pop-up {
+        margin-top: 10px;
+        margin-left: 479px;
+    }
+    .call-h-pop-up {
+        font-size: 25px;
+    }
+    .call-instruction {
+        margin-top: 20px;
+        margin-left: 61px;
+        font-size: 18px;
+    }
+    .call-form {
+        margin-top: 30px;
+        margin-left: 140px;
+    }
+    .call-input {
+        font-size: 18px;
+        width: 210px;
+        height: 40px;
+    }
+    .submit {
+        margin-left: 15px;
+        margin-top: 29px;
+        width: 200px;
+        height: 49px;
+        font-size: 19px;
+    }
+    .boom-sticker {
+        width: 133px;
+        margin-left: 72px;
+        margin-top: 6px;
+    }
+    .sale {
+        grid-template-rows: 46px auto auto;
+        grid-row-gap: 26px;
+        margin-top: 235px;
+        margin-left: 50px;
+    }
+    .stock_inf {
+        font-size: 21px;
+    }
+    .choose-lessons {
+        grid-column-gap: 90px;
+    }
+    .choose-btn {
+        font-size: 16px;
+        width: 181px;
+        height: 45px;
+    }
+    .application-pop-up-body {
+        width: 582px;
+        height: 371px;
+    }
+    .application-close-pop-up {
+        width: 20px;
+        margin-left: 549px;
+    }
+    .application-sale-text {
+        font-size: 60px;
+        margin-left: 43px;
+    }
+    .application-form {
+        left: 273px;
+        top: 69px;
+        grid-row-gap: 30px;
+    }
+    .application-input {
+        width: 246px;
+        height: 41px;
+        font-size: 17px;
+        padding-left: 17px;
+    }
+    .application-submit {
+        width: 174px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .application-sale-img {
+        width: 190px;
+        margin-left: 39px;
+    }
+    .online-lessons {
+        width: 280px;
+        height: 360px;
+    }
+    .offline-lessons {
+        width: 280px;
+        height: 360px;
+    }
+    .h-online-lessons {
+        font-size: 27px;
+        margin-left: 80px;
+    }
+    .school-logo {
+        width: 50px;
+    }
+    .text-online-lessons {
+        font-size: 18px;
+        width: 236px;
+        display: grid;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .online-lessons-price {
+        margin-top: 35px;
+        margin-left: 11px;
+    }
+    .sign-up-btn {
+        width: 195.98px;
+        height: 53.6px;
+    }
+    .h-offline-lessons {
+        margin-left: 77px;
+        font-size: 27px;
+    }
+    .text-offline-lessons {
+        font-size: 18px;
+        margin: 0 auto;
+        margin-top: 13px;
+        width: 240px;
+    }
+    .offline-lessons-price {
+        margin-top: 53px;
+        margin-left: 9px;
+    }
+    .h-teachers h1 {
+        font-size: 30px;
+    }
+    .teachers {
+        margin-top: 85px;
+    }
+    .slides_group {
+        grid-column-gap: 36px;
+        animation: slowSlide_993px 0.8s ease-in-out;
+    }
+    .slide img {
+        width: 200px;
+        height: 305px;
+    }
+    .teacher-name {
+        font-size: 16px;
+    }
+    .slide-buttons {
+        margin-top: 26px;
+    }
+    .slide-btn img {
+        width: 16px;
+    }
+    .h-about_school h1 {
+        font-size: 30px;
+    }
+    .inf_about_school {
+        grid-column-gap: 44px;
+        grid-template-columns: auto 289px;
+        margin-top: 70px;
+    }
+    .inf_about_school img {
+        width: 340px;
+    }
+    .we_teach {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    .teach_list li {
+        font-size: 16px;
+    }
+    .foo_text {
+        width: 587px;
+        grid-column-gap: 70px;
+        grid-template-columns: 166px 117px 160px;
+    }
+    .footer_heading {
+        font-size: 20px;
+    }
+    .footer_s {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    header {
+        background: url(../img/768\ background.png) no-repeat center;
+        height: 425px;
+    }
+    nav {
+        background: url(../img/768\ navBk.png);
+        height: 99px;
+        margin-top: 30px;
+    }
+    .navigation_list {
+        grid-column-gap: 15px;
+    }
+    .nav_btn {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .nav_btn:hover {
+        font-size: 10px;
+    }
+    .call {
+        width: 100px;
+        height: 22.49px;
+    }
+    .call_btn {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .call img {
+        width: 11px;
+    }
+    .call-pop-up-body {
+        width: 420px;
+        height: 300px;
+    }
+    .call-close-pop-up {
+        width: 14px;
+        margin-left: 398px;
+        margin-top: 8px;
+    }
+    .call-h-pop-up {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .call-instruction {
+        font-size: 14px;
+        line-height: 17px;
+        width: 280px;
+        margin: 0 auto;
+        margin-top: 20px;        
+    }
+    .call-form {
+        margin-left: 106px;
+        margin-top: 30px;
+    }
+    .call-input {
+        width: 186px;
+        height: 35px;
+        font-size: 13px;
+    }
+    .submit {
+        width: 150px;
+        height: 36px;
+        font-size: 15px;
+        margin-left: 29px;
+    }
+    .boom-sticker {
+        width: 110px;
+        margin-left: 72px;
+        margin-top: 23px;
+    }
+    .sale {
+        grid-template-rows: 28px auto auto;
+        width: 90px;
+        grid-row-gap: 15px;
+        margin-top: 155px;
+        margin-left: 35px;
+    }
+    .sale h1 {
+        font-weight: 550;
+        font-size: 26px;
+        line-height: 29px;
+    }
+    .stock_inf {
+        width: 215px;
+        font-size: 14px;
+    }
+    .choose-btn {
+        font-size: 13px;
+        width: 137px;
+        height: 35px;
+    }
+    .lessons_section {
+        margin-top: 50px;
+    }
+    .h-lessons {
+        font-size: 24px;
+    }
+    .choose-lessons {
+        margin-top: 40px;
+        grid-column-gap: 60px;
+    }
+    .lesson {
+        width: 217px;
+        height: 264px;
+        border-radius: 10px;
+    }
+    .h-lesson {
+        font-size: 22px;
+        line-height: 27px;
+        margin-left: 60px;
+    }
+    .school-logo {
+        width: 37px;
+        border-top-right-radius: 10px;
+    }
+    .text-online-lessons {
+        font-size: 14px;
+        line-height: 15px;
+        width: 185px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .price {
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 39px;
+        margin-top: 16px;
+    }
+    .sign-up-btn {
+        width: 132px;
+        height: 36.03px;
+        margin-left: 43px;
+        margin-top: 26px;
+        font-size: 12px;
+    }
+    .text-offline-lessons {
+        font-size: 14px;
+        line-height: 16px;
+        width: 186px;
+        margin-left: 18px;
+        margin-top: 30px;
+    }
+    .offline-lessons-price {
+        margin-top: 25px;
+    }
+    .application-pop-up-body {
+        width: 460px;
+        height: 302px;        
+    }
+    .application-close-pop-up {
+        margin-top: 10px;
+        margin-left: 436px;
+        width: 14px;
+    }
+    .application-sale-text {
+        margin-left: 51.16px;
+        margin-top: 8px;
+        font-size: 48px;
+        line-height: 56px;
+        transform: rotate(8.79deg);
+    }
+    .application-sale-img {
+        width: 165px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    .application-form {
+        left: 208px;
+        top: 50px;
+        grid-row-gap: 25px;
+    }
+    .application-input {
+        width: 195px;
+        height: 38px;
+        font-size: 14px;
+    }
+    .application-submit {
+        width: 125px;
+        height: 38px;
+        font-size: 12px;
+    }
+    .teachers {
+        margin-top: 70px;
+    }
+    .h-teachers h1 {
+        font-size: 24px;
+        height: 44px;
+    }
+    .slides {
+        display: none;
+    }
+    .smaller-slides {
+        margin-top: 40px;
+        display: grid;
+        justify-content: center;
+    }
+    .smaller_slides_group {
+        display: none;
+        grid-column-gap: 46px;
+        grid-template-columns: 200px 200px;
+        animation: slowSlide_768px 0.8s ease-in-out;
+    }
+    @keyframes slowSlide_768px  {
+        from {margin-left: -70px; opacity: 0;}
+        to {margin-left: 0px; opacity: 1;}
+    }
+    .smaller_slides_group.active {
+        display: grid;
+    }
+    .smaller-slide {
+        width: 200px;
+        height: 300px;
+    }
+    .smaller-slide img {
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    .teacher-name {
+        font-size: 15px;
+    }
+    .smaller-slide-buttons {
+        margin-top: 55px;
+        text-align: center;
+    }
+    .smaller-slide-btn {
+        display: inline-block;
+        cursor: pointer;
+    }
+    .smaller-slide-btn img {
+        width: 12px;
+        display: block;
+    }
+    .smaller-btn-next {
+        transform: rotate(180deg);
+        margin-left: 40px;
+    }
+    .about_school {
+        margin-top: 65px;
+    }
+    .h-about_school h1 {
+        font-size: 24px;
+        height: 44px;
+    }
+    .inf_about_school {
+        margin-top: 35px;
+        grid-column-gap: 30px;
+        grid-template-columns: auto 217px;
+    }
+    .inf_about_school img {
+        width: 270px;
+    }
+    .we_teach {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .teach_list li {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .foo_text {
+        grid-column-gap: 60px;
+        grid-template-columns: 110px 107px 153px;
+        width: 487px;
+    }
+    .footer_heading {
+        font-size: 16px;
+    }
+    .footer_s {
+        font-size: 13px;
+    }
+    .foo_info {
+        grid-row-gap: 8px;
+    }
+    .foo_about {
+        grid-row-gap: 8px;
+        grid-template-rows: 22px 33px 15px 17px
+    }
+    .foo_company {
+        grid-row-gap: 8px;
+    }
+    .icon {
+        width: 33px;
+    }
+    .copyright {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container {
+        width: 320px;
+    }
+    header {
+        height: 255px
+    }
+    nav {
+        background: none;
+        height: 0px;
+    }
+    .header_burger {
+        width: 30px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+        z-index: 3;
+        margin-left: auto;
+    }
+    .header_burger::before,
+    .header_burger::after {
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .header_burger span {
+        position: absolute;
+        background-color: black;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header_burger::before {
+        top: 0;
+    }
+    .header_burger::after {
+        bottom: 0;
+    }
+    .header_burger.active_menu::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header_burger.active_menu::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header_burger.active_menu span {
+        transform: scale(0);
+    }
+    .navigation {
+        position: fixed;
+        background: rgba(0, 0, 0, .5);
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        transition: all 0.3s ease 0s;
+    }
+    .navigation.active_menu {
+        left: 0;
+        overflow: hidden;
+    }
+    .navigation_list {
+        background: rgba(0, 0, 0, 0.9);
+        width: 150px;
+        height: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: block;
+        padding-top: 10px;
+    }
+    .nav_btn {
+        color: white;
+        font-weight: 600;
+        margin-left: 20px;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .nav_btn:hover {
+        font-size: 12px;
+    }
+    .call {
+        margin-left: 20px;
+        margin-top: 10px;
+        width: 105px;
+        height: 23.49px;
+    }
+    .call_btn {
+        font-weight: 600;
+    }
+    .call img {
+        width: 13px;
+    }
+    .call-pop-up-body {
+        z-index: 999;
+        width: 290.72px;
+        height: 220.25px;
+    }
+    .call-close-pop-up {
+        width: 11px;
+        margin-left: 274px;
+        margin-top: 5px;
+    }
+    .call-h-pop-up {
+        font-size: 13px;
+    }
+    .call-instruction {
+        font-size: 10px;
+        width: 227px;
+        margin-top: 10px;
+    }
+    .call-form {
+        margin-left: 65px;
+        margin-top: 15px;
+    }
+    .call-input {
+        width: 140px;
+        height: 29px;
+        font-size: 10px;
+    }
+    .submit {
+        width: 100px;
+        height: 30px;
+        font-size: 11px;
+        margin-left: 33px;
+        margin-top: 9px;
+        border-radius: 5px;
+    }
+    .boom-sticker {
+        width: 79px;
+        margin-left: 49px;
+        margin-top: 10px
+    }
+    .sale {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .sale h1 {
+        font-size: 30px;
+    }
+    .stock_inf {
+        font-size: 16px;
+    }
+    .lessons_section {
+        margin-top: 37px;
+    }
+    .h-lessons {
+        font-size: 20px;
+    }
+    .choose-lessons {
+        grid-row-gap: 50px;
+        grid-template-columns: none;
+        margin-top: 25px;
+    }
+    .lesson {
+        width: 205px;
+        height: 230px;
+    }
+    .h-lesson {
+        font-size: 18px;
+        margin-left: 66px;
+        margin-top: 6px;
+    }
+    .school-logo {
+        width: 33px;
+    }
+    .sign-up-btn {
+        width: 120px;
+        height: 33px;
+    }
+    .price {
+        margin-left: 14px;
+    }
+    .text-online-lessons {
+        margin-top: 12px;
+        margin-left: 13px;
+        font-size: 13px;
+    }
+    .text-offline-lessons {
+        font-size: 13px;
+        width: 174px;
+        margin-left: 16px;
+        margin-top: 13px;
+    }
+    .application-pop-up-body {
+        width: 310px;
+        height: 220px;
+    }
+    .application-close-pop-up {
+        margin-top: 8px;
+        margin-left: 290px;
+        width: 12px;
+    }
+    .application-sale-text{
+        font-size: 36px;
+        margin-left: 20px;
+    }
+    .application-sale-img {
+        width: 105px;
+        margin-left: 15px;
+    }
+    .application-form {
+        left: 140px;
+        top: 47px;
+        grid-row-gap: 15px;
+    }
+    .application-input {
+        width: 129px;
+        height: 27px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .application-submit {
+        width: 95px;
+        height: 28px;
+        font-size: 9px;
+    }
+    .h-teachers h1 {
+        font-size: 20px;
+    }
+    .smaller_slides_group {
+        grid-template-columns: 140px 140px;
+        grid-column-gap: 35px;
+    }
+    .smaller-slide {
+        width: 140px;
+        height: 210px;
+    }
+    .smaller-slide img  {
+        height: 210px;
+        width: 140px;
+    }
+    .teacher-name {
+        font-size: 13px;
+    }
+    .smaller-slide-buttons {
+        margin-top: 45px;
+    }
+    .h-about_school h1 {
+        font-size: 20px;
+    }
+    .inf_about_school {
+        margin-top: 35px;
+        grid-column-gap: 30px;
+        grid-template-rows: auto 170px;
+        grid-row-gap: 30px;
+        grid-template-columns: none;
+    }
+    footer {
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .foo_text {
+        grid-column-gap: 35px;
+        width: 310px;
+    }
+    .footer_heading {
+        font-size: 16px;
+    }
+    .footer_s {
+        font-size: 12px;
+    }
+    .foo_icons {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .foo_text {
+        grid-template-columns: 174px 100px;
+        grid-row-gap: 30px;
+    }
+}

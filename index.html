@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <title></title>
+</head>
+<body>
+  <header>
+    <div class="header_container">
+      <img class="logo" src="img/logo.svg">
+        <nav>
+        <a class="nav-btn" href="#" onclick="slowScroll('.content_container')">Рецепты</a>
+        <a class="nav-btn" href="#">Популярные</a>
+        <a class="nav-btn" href="school.html">Наша школа</a>
+        <a class="nav-btn" href="#" onclick="slowScroll('.foo_text')">Контакты</a>
+      </nav>
+    <div class="preview">
+      <div class="preview_inf">
+        <h1>Легкие и краткие 
+          рецепты</h1>
+          <p>здесь собраны самые легкие и 
+            вкусные рецепты из продуктов, 
+            которые есть дома у каждого!</p>
+            <div class="see_recipes">
+              <button id="scroll" onclick="slowScroll('.content_container')">Посмотреть рецепты</button>
+            </div>
+          </div>
+          <div class="preview_img">
+            <img class="preview_recipe" src="img/recipes.png">
+        </div>
+    </div>
+    </div> 
+  </header>
+  <div class="content_container">
+    <div class="filtering">
+      <button class="btn_select reset">
+        <span class="reset_span">Сбросить</span>
+        <img src="img/Mask group.png" alt="Cбросить">
+      </button>
+      <button onclick="filter(1)" class="btn_select chicken_filter">
+        <span class="select_span">Курица</span>
+      </button>
+      <button onclick="filter(2)" class="btn_select salads_filter">
+        <span class="select_span">Салаты</span>
+      </button>
+      <button class="btn_select desserts_filter"> 
+        <span class="select_span">Десерты</span>
+      </button>
+    </div>
+        <div class="recipes">
+          <div id="1" class="king_salad grid_col block">
+            <div class="recipe_img">
+              <img class="recipe_preview" src="img/Салат.png" alt="Королевский салат">
+            </div>
+              <div class="salad_info info_gap">
+                <h1 class="name">“Королевский” салат</h1>
+                  <p class="recipe salad_recipe">
+                    Нарежте калбасу и крабовые 
+                    палочки соломкой, вареное 
+                    яйцо кубиками и огурцы 
+                    полукругами, посолите. 
+                    Сначала положите колбасу, 
+                    затем огурцы, затем кукурузу, 
+                    крабовые палочки, яйцо и 
+                    огурцы по краям, готово! 
+                  </p>
+            </div>
+          </div>
+            <div id="2" class="Snacks block">
+              <div class="recipe_img">
+                <img class="recipe_preview" src="img/Закуски.png" alt="Закуски">
+              </div>
+                <div class="snacks_info info_gap">
+                  <h1 class="name">Закуски</h1>
+                    <p class="recipe">
+                      нарежте яйцо, морковку, 
+                      грибы кубиками положите это 
+                      все на одну тарелку, 
+                      перемешайте заправьте 
+                      майонезом, выложите в 
+                      формочки и готово!
+                      </p>
+                  </div>
+            </div> 
+          <div id="3" class="pie block">
+            <div class="recipe_img">
+              <img class="recipe_preview" src="img/Пирог.png" alt="Пирог с ягодами">
+            </div>
+            <div class="pie_info info_gap">
+              <h1 class="name">Пирог с ягодами</h1>
+                <p class="recipe">
+                  Разбейте 3 яйца, насыпте 
+                  500гр сахара, 400гр  муки, 
+                  перемешайте, затем в 
+                  формочку для выпекания 
+                  закройте дно, потом варенье и 
+                  еще раз тестом. в духовку на 40 
+                  минут при температуре 180 
+                  градусов, готово! 
+                </p>
+            </div>
+          </div>
+          <div id="4" class="Cheesecake block">
+            <div class="recipe_img">
+              <img class="recipe_preview" src="img/Чизкейк.png" alt="Чизкейк с малиной">
+            </div>
+              <div class="Cheesecake_info info_gap">
+                <h1 class="name">Чизкейк с малиной</h1>
+                  <p class="recipe pad">
+                    Измельчить печенье, затем
+                    добавить 200гр сахара, соль,
+                    масло. перемешать до
+                    однорождной массы выложить
+                    в форму. Взять отдельную
+                    тарелку положить 3 яйца,
+                    сливочный сыр, крахмал.
+                    положить в форму с печеньем
+                    <span id="dots">...</span>
+                      <span id="more">
+                        далее положить на 10 часов в холодильник и готово!
+                      </span>
+                  </p>
+                <button onclick="open_more(), test()" id="more_btn">Читать далее</button>
+              </div>
+          </div>
+          <div id="5" class="Cheesecakes block">
+            <div>
+              <img class="recipe_preview" src="img/Сырники.png" alt="Сырники с сиропом">
+            </div>
+              <div class="Cheesecakes_info info_gap">
+                <h1 class="name">Сырники с сиропом</h1>
+                  <p class="recipe">
+                    Разбейте 3 яйца, насыпте 500гр 
+                    сахара, 400гр  муки, 
+                    перемешайте, затем нужно
+                    нагреть сковороду, налить
+                    масло в сковороду, и жарить.
+                    Готово!
+                  </p>
+              </div>
+          </div>
+          <div id="6" class="berry_cake block">
+            <div class="recipe_img">
+              <img class="recipe_preview" src="img/Ягодный торт.png" alt="ягодный торт">
+            </div>
+              <div class="berry_cake_info info_gap">
+                <h1 class="name">Ягодный торт</h1>
+                  <p class="recipe">
+                    Измельчить печенье, затем
+                    добавить 500гр сахара, соль,
+                    3 яйца, масло. перемешать до
+                    однорождной массы выпечь,
+                    намазать между коржами и
+                    верхний корж полностью
+                    сметаной посыпать печеньем,
+                    готово!
+                  </p>
+            </div>
+          </div>
+          <div id="7" class="steak block">
+            <div>
+              <img class="recipe_preview" src="img/Стейк.png" alt="Стейк (свинина)">
+            </div>
+              <div class="steak_info info_gap">
+                <h1 class="name">Стейк (свинина)</h1>
+                  <p class="recipe">
+                    Достаем мясо и сковороду,
+                    наливаем на сковороду масло,
+                    солим и перчим стейк, жарим 20
+                    минут, готово! 
+                  </p>
+            </div>
+          </div>
+          <div id="8" class="chicken block">
+            <div class="recipe_img">
+              <img class="recipe_preview" src="img/Курица.png" alt="Курица в духовке">
+            </div>
+              <div class="chicken_info info_gap">
+                <h1 class="name">Курица в духовке</h1>
+                  <p class="recipe">
+                    достаем курицу, солим и
+                    перчим, добавляем приправу
+                    для курицы поливаем
+                    лимонным соком, в
+                    рахогретую духовку на
+                    1 час на 160 градусов
+                  </p>
+              </div>
+          </div>
+        </div>
+        <footer>
+          <div class="foo_text">
+            <div class="foo_info">
+              <h1 class="footer_heading">Информация</h1>
+              <a href="" onclick="footer_alert()" class="footer_s">Информация</a>
+              <a href="" onclick="footer_alert()" class="footer_s">Школа</a>
+              <a href="" onclick="footer_alert()" class="footer_s">Техподдержка</a>
+            </div>
+            <div class="foo_about">
+              <h1 class="footer_heading">О нас</h1>
+              <a href="" onclick="footer_alert()" class="footer_s">Мобильное приложение</a>
+              <a href="" onclick="footer_alert()" class="footer_s">Опыт работы</a>
+              <a href="" onclick="footer_alert()" class="footer_s">Как начиналось</a>
+            </div>
+            <div class="foo_company">
+              <h1 class="footer_heading">Компания</h1>
+              <a href="" onclick="footer_alert()" class="footer_s">Правила пользования</a>
+              <a href="" onclick="footer_alert()" class="footer_s">Антиспам-политика</a>
+              <a href="" onclick="footer_alert()" class="footer_s">Политика cookie</a>
+              <a href="" onclick="footer_alert()" class="footer_s">Политика конфиденциальности</a>
+              <a href="" onclick="footer_alert()" class="footer_s">Политика возврата средств</a>
+            </div>
+          </div>
+          <div class="foo_icons">
+            <a class="foo_icon" href="https://telegram.org/"><img class="icon" src="img/telegram.png" alt="telegram"onmouseover="this.src='img/big-telegram.png';"
+                                                                                                                      onmouseout="this.src='img/telegram.png';"></a>
+            <a class="foo_icon" href="https://www.youtube.com/"><img class="icon" src="img/test.png" alt="youtube"onmouseover="this.src='img/big-youtube.png';"
+                                                                                                                    onmouseout="this.src='img/youtube.png';"></a>
+            <a class="foo_icon" href="https://instagram.com/"><img class="icon" src="img/instagram.png" alt="instagram"onmouseover="this.src='img/big-instragram.png';"
+                                                                                                                        onmouseout="this.src='img/instagram.png';"></a>
+            <a class="foo_icon" href="https://facebook.com/"><img class="icon" src="img/facebook.png" alt="facebook" onmouseover="this.src='img/big-facebook.png';"
+                                                                                                                      onmouseout="this.src='img/facebook.png';"></a>
+            <a class="foo_icon" href="https://vk.com/"><img class="icon" src="img/vk.png" alt="vk" onmouseover="this.src='img/big-VK.png';"
+                                                                                                    onmouseout="this.src='img/vk.png';"></a>
+          </div>
+          <div class="copyright">
+            <span>© 2022 - 2023</span>
+          </div>
+        </footer>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+</html>

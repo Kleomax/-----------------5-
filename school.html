@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа</title>
+    <link rel="stylesheet" href="css/school.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<body>
+    <header>
+          <nav>
+            <div class="container">
+              <div class="header_burger">
+                <span></span>
+              </div>
+              <div class="navigation">
+                <ul class="navigation_list">
+                  <a href="index.html" class="nav_btn"> Наши рецепты </a>
+                  <li class="nav_btn"  onclick="slowScroll('.about_school'), hideMenu()"> О школе </li>
+                  <li class="nav_btn for_teachers" onclick="slowScroll('.teachers'), hideMenu()"> Преподаватели </li>
+                  <li class="nav_btn" onclick="slowScroll('.lessons_section'), hideMenu()"> Наши курсы </li>
+                  <li class="nav_btn" onclick="slowScroll('.foo_text'), hideMenu()"> Контакты </li>
+                  <button onclick="PopUpShow()" class="call" data-modal="call-popup">
+                  <span class="call_btn"> Позвонить</span>
+                  <img src="img/call.png" alt="Позвонить">
+                  </button>
+                </ul>
+              </div>
+             <div id="call-popup">
+               <div class="call-pop-up-content">
+                <div class="call-pop-up-body">
+                  <img onclick="PopUpHide()" class="call-close-pop-up" src="img/close.png" alt="Закрыть">
+                  <h1 class="call-h-pop-up"> Ответим на все ваши вопросы </h1>
+                  <p class="call-instruction">
+                    Введите свой номер и в течении двух
+                    дней мы вам позвоним и ответим
+                    на любые ваши вопросы про нашу
+                    школу и как она будет проходить 
+                  </p>
+                  <form class="call-form" action="index.php" method="POST" id="contact">
+                    <input maxlength="12" class="call-input" type="tel" name="phone" pattern=".{12}" placeholder="Ваш номер">
+                    <div class="call-bottom-elem">
+                      <button type="submit" class="submit">
+                         Отправить
+                      </button>
+                      <img class="boom-sticker" src="img/Boom.png">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          </nav>
+        <div class="container">
+          <div class="sale">
+            <h1> Акция!</h1>
+            <p class="stock_inf"> Приведи друга и получи
+              в подарок фирменный фартук! </p>
+              <button onclick="slowScroll('.lessons_section')" class="choose-btn">
+                 <span class="choose"> Выбрать курсы </span> 
+              </button>
+            </div>
+        </div>
+    </header>
+    <section class="lessons_section">
+      <div class="container">
+        <div>
+        <h1 class="h-lessons">Наши курсы</h1>
+      </div>
+      <div class="choose-lessons">
+        <div class="lesson online-lessons">
+          <div class="top-lessons">
+            <span class="h-lesson h-online-lessons">Онлайн</span>
+            <img class="school-logo" src="img/School Logo.png">
+          </div>
+          <div class="lesson-information inf-online-lessons">
+          <p class="lesson-text text-online-lessons">
+            Вы будете
+            подключаться по
+            программе zoom там вы
+            будете разговаривать и
+            практиковаться у себя
+            дома
+          </p>
+          <p class="price online-lessons-price">1 мес.- 3000 руб.</p>
+          <button onclick="openApplication(0)" class="sign-up-btn online-lessons-btn">
+            Записаться
+          </button>
+          </div>
+          <div id="application_popup">
+            <div class="application-pop-up-content">
+              <div class="application-pop-up-body">
+                <img onclick="closeApplication()" class="application-close-pop-up" src="img/close.png" alt="Закрыть">
+                <h1 class="application-sale-text"> -15% </h1>
+                <img class="application-sale-img" src="img/Effects.png">
+                <form class="application-form" action="school.php" method="POST" id="application">
+                  <input class="application-input" type="tel" name="phone" maxlength="12" pattern=".{12}" placeholder="Ваш номер">
+                  <input class="application-input" type="email" name="email" placeholder="E-mail">
+                  <input class="application-input" type="number" name="age" maxlength="3" pattern=".{3}" placeholder="Возраст">
+                  <div class="application-button-elem">
+                    <button id="application-submit" type="application-submit" class="application-submit">
+                       Отправить 
+                    </button>
+                  </div>
+                </form>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="lesson offline-lessons">
+          <div class="top-lessons">
+            <span class="h-lesson h-offline-lessons"> В школе </span>
+            <img class="school-logo" src="img/School Logo.png">
+          </div>
+          <div class="lesson-information inf-offline-lessons">
+          <p class="lesson-text text-offline-lessons">
+            Вы будете ходить в
+            нашу школу с
+            оборудованием которое
+            будет интересно и
+            удобно всем
+          </p>
+          <p class="price offline-lessons-price">1 мес.- 4000 руб.</p>
+          <button onclick="openApplication(0)" class="sign-up-btn offline-lessons-btn">
+             Записаться
+          </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="teachers">
+    <div class="container">
+      <div class="h-teachers">
+        <h1> Преподаватели </h1>
+      </div>
+      <div class="slides">
+        <div class="slides_group active">
+          <div class="slide">
+            <img src="img/Alexandar.png" alt="Александр">
+            <p class="teacher-name">Александр</p>
+          </div>
+          <div class="slide">
+            <img src="img/Vasiliy.png" alt="Василий">
+            <p class="teacher-name">Василий</p>
+          </div>
+          <div class="slide">
+            <img src="img/Elizabeth.png" alt="Елизавета">
+            <p class="teacher-name">Елизавета</p>
+          </div>
+        </div>
+        <div class="slides_group">
+          <div class="slide">
+            <img src="img/Mikhail.png" alt="Михаил">
+            <p class="teacher-name">Михаил</p>
+          </div>
+          <div class="slide">
+            <img src="img/Petr.png" alt="Пётр">
+            <p class="teacher-name">Пётр</p>
+          </div>
+          <div class="slide">
+            <img src="img/Vladimir.png" alt="Владимир">
+            <p class="teacher-name">Владимир</p>
+          </div>
+        </div>
+        <div class="slide-buttons">
+          <div class="slide-btn btn-prev">
+            <img src="img/btn.png" alt="Вперёд">
+          </div>
+          <div class="slide-btn btn-next">
+            <img src="img/btn.png" alt="Назад">
+          </div>
+        </div>
+      </div>
+      <div class="smaller-slides">
+        <div class="smaller_slides_group active">
+          <div class="smaller-slide">
+            <img src="img/Alexandar.png" alt="Александр">
+            <p class="teacher-name">Александр</p>
+          </div>
+          <div class="smaller-slide">
+            <img src="img/Vasiliy.png" alt="Василий">
+            <p class="teacher-name">Василий</p>
+          </div>
+        </div>
+        <div class="smaller_slides_group">
+          <div class="smaller-slide">
+            <img src="img/Elizabeth.png" alt="Елизавета">
+            <p class="teacher-name">Елизавета</p>
+          </div>
+          <div class="smaller-slide">
+            <img src="img/Mikhail.png" alt="Михаил">
+            <p class="teacher-name">Михаил</p>
+          </div>
+        </div>
+        <div class="smaller_slides_group">
+          <div class="smaller-slide">
+            <img src="img/Petr.png" alt="Пётр">
+            <p class="teacher-name">Пётр</p>
+          </div>
+          <div class="smaller-slide">
+            <img src="img/Vladimir.png" alt="Владимир">
+            <p class="teacher-name">Владимир</p>
+          </div>
+        </div>
+        <div class="smaller-slide-buttons">
+          <div class="smaller-slide-btn smaller-btn-prev">
+            <img src="img/btn.png" alt="Вперёд">
+          </div>
+          <div class="smaller-slide-btn smaller-btn-next">
+            <img src="img/btn.png" alt="Назад">
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="about_school">
+      <div class="container">
+        <div>
+          <div class="h-about_school">
+            <h1> О нашей школе </h1>
+          </div>
+          <div class="inf_about_school">
+            <img src="img/cooks.png">
+            <ul class="teach_list">
+              <p class="we_teach"> Мы обучаем: </p>
+              <li> Профессиональных шеф-поваров </li>
+              <li> Начинающих в профессии повара </li>
+              <li> Любителей, желающих научиться кулинарии </li>
+              <li> Управляющих ресторанами </li>
+              <li> Маркетологов </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+        <footer>
+          <div class="container">
+            <div class="foo_text">
+              <div class="foo_info">
+                <h1 class="footer_heading">Информация</h1>
+                <a href="" onclick="footer_alert()" class="footer_s">Информация</a>
+                <a href="" onclick="footer_alert()" class="footer_s">Школа</a>
+                <a href="" onclick="footer_alert()" class="footer_s">Техподдержка</a>
+              </div>
+              <div class="foo_about">
+                <h1 class="footer_heading">О нас</h1>
+                <a href="" onclick="footer_alert()" class="footer_s">Мобильное приложение</a>
+                <a href="" onclick="footer_alert()" class="footer_s">Опыт работы</a>
+                <a href="" onclick="footer_alert()" class="footer_s">Как начиналось</a>
+              </div>
+              <div class="foo_company">
+                <h1 class="footer_heading">Компания</h1>
+                <a href="" onclick="footer_alert()" class="footer_s">Правила пользования</a>
+                <a href="" onclick="footer_alert()" class="footer_s">Антиспам-политика</a>
+                <a href="" onclick="footer_alert()" class="footer_s">Политика cookie</a>
+                <a href="" onclick="footer_alert()" class="footer_s">Политика конфиденциальности</a>
+                <a href="" onclick="footer_alert()" class="footer_s">Политика возврата средств</a>
+              </div>
+            </div>
+            <div class="foo_icons">
+              <a class="foo_icon" href="https://telegram.org/"><img class="icon" src="img/telegram.png" alt="telegram"onmouseover="this.src='img/big-telegram.png';"
+                                                                                                                        onmouseout="this.src='img/telegram.png';"></a>
+              <a class="foo_icon" href="https://www.youtube.com/"><img class="icon" src="img/test.png" alt="youtube"onmouseover="this.src='img/big-youtube.png';"
+                                                                                                                      onmouseout="this.src='img/youtube.png';"></a>
+              <a class="foo_icon" href="https://instagram.com/"><img class="icon" src="img/instagram.png" alt="instagram"onmouseover="this.src='img/big-instragram.png';"
+                                                                                                                          onmouseout="this.src='img/instagram.png';"></a>
+              <a class="foo_icon" href="https://facebook.com/"><img class="icon" src="img/facebook.png" alt="facebook" onmouseover="this.src='img/big-facebook.png';"
+                                                                                                                        onmouseout="this.src='img/facebook.png';"></a>
+              <a class="foo_icon" href="https://vk.com/"><img class="icon" src="img/vk.png" alt="vk" onmouseover="this.src='img/big-VK.png';"
+                                                                                                      onmouseout="this.src='img/vk.png';"></a>
+            </div>
+            <div class="copyright">
+              <span>© 2022 - 2023</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="js/school.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+        <script>
+          var application_popup = $('application-pop-up-content')
+          function openApplication(i) {
+            $('#application_popup').fadeIn();
+            application_popup.fadeOut(1);
+            $(application_popup[i]).fadeIn();
+          }
+        </script>
+        <script>
+          var application_popup = $('application-pop-up-content')
+          function closeApplication() {
+            $('#application_popup').fadeOut();
+          }
+        </script>
+
+        <script>
+
+          $(document).ready(function(){
+              //Скрыть PopUp при загрузке страницы    
+              PopUpHide();
+          });
+          //Функция отображения PopUp
+          function PopUpShow(){
+              $("#call-popup").show();
+          }
+          //Функция скрытия PopUp
+          function PopUpHide(){
+              $("#call-popup").hide();
+          }
+      </script>
+  <script>
+
+$(function(){
+$('#contact').submit(function(){
+    var errors = false;
+    $(this).find('span').empty();
+
+    $(this).find('input').each(function(){
+        if( $.trim( $(this).val() ) == '' ){
+            errors = true;
+            $(this).next().text( 'Заполните это поле');
+        }
+    });
+
+    if('errors'){
+        var data = $('#contact').serialize();
+        $.ajax ({
+            url: 'mail.php',
+            type: 'POST',
+            data: data,
+            beforeSend: function() {
+                $('#submit').next().text('Отправляю...');
+            },
+            success: function(res) {
+                alert('Заявка успешно отправлена. Наш Менеджер свяжется с Вами в ближайшее время!');
+            },
+            error: function() {
+                alert('ошибка');
+            }
+        });
+    }
+
+    return false;
+});
+
+});
+
+
+$(function(){
+$('#application').submit(function(){
+    var errors = false;
+    $(this).find('span').empty();
+
+    $(this).find('input').each(function(){
+        if( $.trim( $(this).val() ) == '' ){
+            errors = true;
+            $(this).next().text( 'Заполните это поле');
+        }
+    });
+
+    if('errors'){
+        var data = $('#application').serialize();
+        $.ajax ({
+            url: 'school.php',
+            type: 'POST',
+            data: data,
+            beforeSend: function() {
+                $('#application-submit').next().text('Отправляю...');
+            },
+            success: function(res) {
+                alert('Заявка успешно отправлена. Наш Менеджер свяжется с Вами в ближайшее время!');
+            },
+            error: function() {
+                alert('ошибка');
+            }
+        });
+    }
+
+    return false;
+});
+
+});
+</script>
+</body>
+</html>
